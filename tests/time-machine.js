@@ -8,7 +8,7 @@ test('test traveling 66 years back', t => {
 });
 
 test('test hacking to much time', t => {
-const error = t.throws(()=> {
+  const error = t.throws(() => {
     timeMachine(2051);
   }, Error);
   t.is(error.message, 'Error! Hacking too much time!');
